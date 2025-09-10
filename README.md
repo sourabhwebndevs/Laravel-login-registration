@@ -59,3 +59,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel Login Registration (modified)
+
+This project includes admin features: user management, roles, dashboard, and settings.
+
+Setup:
+
+1. Copy .env and set DB credentials.
+2. Run migrations: `php artisan migrate`
+3. Seed roles: `php artisan db:seed --class=RolesTableSeeder`
+4. Create a user (register) and assign admin role to the first user via seeder or tinker.
+
+Admin routes are under `/admin` and protected by `auth` and `admin` middleware.
