@@ -9,12 +9,6 @@ use App\Models\Role;
 
 class UserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-        $this->middleware('admin');
-    }
-
     // List users with pagination
     public function index()
     {
